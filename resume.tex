@@ -1,0 +1,245 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{geometry}
+\usepackage{layout}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Timothy Lechman} \\ \vspace{1pt}
+    \raisebox{-0.1\height}\faMapMarker\ Philadelphia, PA \vspace{1pt} \small ~
+    \href{mailto:tlechman49@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{tlechman49@gmail.com}} ~ 
+    \href{https://linkedin.com/in/timothy-lechman/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/timothy-lechman}} 
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Delve}{Mar 2021 -- Present}
+      {Senior Embedded Software Engineer}{Hybrid -- Philadelphia, PA}
+      \resumeItemListStart
+        \resumeItem{Lead development of embedded software for various consumer, medical, and industrial products}
+        \resumeItem{Collaborated with clients from ideation and proof of concepts through to production support}
+        \resumeItem{Developed documentation describing requirements, architecture, design, and verification testing}
+        \resumeItem{Mentored interns and staff engineers on projects and with development of internal articles}
+        \resumeItem{Championed an internal library initiative to centralize common code to prioritize reuse and continuously improve code quality}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Nittany Acoustics}{Mar 2020 -- Mar 2021}
+      {Firmware Engineer}{Remote -- Philadelphia, PA}
+      \resumeItemListStart
+        \resumeItem{Lead firmware developer of small form-factor noise dosimeter products for defense and medical contracts including a device to be located entirely inside the ear}
+        \resumeItem{Developed DSP filter chain for noise dosimetry using Mathworks DSP Systems Toolbox}
+        \resumeItem{Performed board bring up, hardware rework, and debugging in home lab}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Bresslergroup}{Sep 2017 -- Mar 2019}
+      {Junior Electrical Engineer}{On-site -- Philadelphia, PA}
+      \resumeItemListStart
+        \resumeItem{Collaborated with a multidisciplinary team to develop consumer and medical products for clients}
+        \resumeItem{Developed hardware and firmware for various consumer and medical devices}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Atherectomy Device} $|$ \emph{Embedded C, PIC33, Baremetal, BLDC, }}{Delve}
+          \resumeItemListStart
+            \resumeItem{Developed an atherectomy device under 62304 design controls}
+            \resumeItem{Designed a custom brushless DC control scheme using sensored, field-oriented control}
+            \resumeItem{Collaborated with the client to produce a state machine that provides a safe and comfortable user experience}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Industrial Air Quality Monitor} $|$ \emph{Embedded C, ATSAMC21, FreeRTOS, }}{Delve}
+          \resumeItemListStart
+            \resumeItem{Redesigned an industrial air quality monitoring system to replace an existing legacy system}
+            \resumeItem{Ensured compatibility with existing client systems while modernizing and upgrading the product}
+            \resumeItem{Architected a custom bootloader and firmware update process over RS485}
+            \resumeItem{Interfaced with over 20 different I2C and SPI devices to interact with various sensors and controls}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Fitness Bands} $|$ \emph{Embedded C, NRF52840, Zephyr, BLE, }}{Delve}
+          \resumeItemListStart
+            \resumeItem{Developed a consumer fitness watch and a complimentary medical fitness watch with an enhanced feature set}
+            \resumeItem{Maximized high throughput BLE streaming capabilities for PPG sensor data}
+            \resumeItem{Collaborated in a distributed firmware team on a multiprocessor design}
+          \resumeItemListEnd 
+          % \vspace{-13pt}
+      %   \resumeProjectHeading
+      %     {\textbf{Intravitreal Injector} $|$ \emph{Lang, processor, tech}}{Delve}
+      %     \resumeItemListStart
+      %       \resumeItem{An automated drug delivery device for intravitreal injections}
+      %     \resumeItemListEnd
+      %     \vspace{-13pt}
+      % \resumeProjectHeading
+      %     {\textbf{Parcel Delivery System} $|$ \emph{Lang, processor, tech}}{Delve}
+      %     \resumeItemListStart
+      %       \resumeItem{A modular parcel delivery subsystem for automated vehicles}
+      %     \resumeItemListEnd 
+      %     \vspace{-13pt}
+      % \resumeProjectHeading
+      %     {\textbf{In-ear Noise Dosimeter} $|$ \emph{Embedded C, Apollo 3 Blue, BLE, DSP, Audio}}{Nittany Acoustics}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed noise dosimeter product with a form factor comparable to bluetooth headphones}
+      %     \resumeItemListEnd 
+      %     \vspace{-13pt}
+      % \resumeProjectHeading
+      %     {\textbf{Deep Fitting Noise Dosimeter} $|$ \emph{Lang, processor, tech}}{Nittany Acoustics}
+      %     \resumeItemListStart
+      %       \resumeItem{Noise dosimeter product designed to fit deeply in the ear behind a set of ear plugs}
+      %     \resumeItemListEnd 
+      %     \vspace{-13pt}
+      % \resumeProjectHeading
+      %     {\textbf{Internal Library} $|$ \emph{Lang, processor, tech}}{Delve}
+      %     \resumeItemListStart
+      %       \resumeItem{Noise dosimeter product designed to fit deeply in the ear behind a set of ear plugs}
+      %     \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Drexel University}{2015 -- 2020}
+      {Bachelor of Science in Electrical Engineering}{Philadelphia, PA}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, Matlab, C\#} \\
+     \textbf{Developer Tools}{: Git, CMake, Clang, GCC, CI/CD, Docker, Atlassian Products, Doxygen, IAR, SVN} \\
+     \textbf{Embedded}{: FreeRTOS, Zephyr, FOC, PID, DSP, I2C, SPI, UART, RS-485, BLE, WiFi, STM32, Nordic} \\
+     \textbf{Lab Equipment}{: Multimeter, Oscilloscope, Signal generator, Logic analyzer, SMD/THT soldering, Hot-air rework} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
